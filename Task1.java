@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -14,31 +13,21 @@ public class Task1 {
         double x = in.nextDouble();
         System.out.println("Введите Аргумент 2: ");
         double y = in.nextDouble();
-
         Scanner in2 = new Scanner(System.in);
         System.out.println("Введите действие '+', '-', '*', '/' : ");
         String z = in2.nextLine();
-
         in.close();
         in2.close();
-
         double result = 0;
         String Otvet = "Ответ : " + x + " " + z + " " + y + " = ";
-
-        if (Objects.equals(z, "+")) {
-            result = x + y;
-            System.out.printf(Otvet + "%.4f", result);
-        } else if (Objects.equals(z, "-")) {
-            result = x - y;
-            System.out.printf(Otvet + "%.4f", result);
-        } else if (Objects.equals(z, "*")) {
-            result = x * y;
-            System.out.printf(Otvet + "%.4f", result);
-        } else if (Objects.equals(z, "/")) {
-            result = x / y;
-            System.out.printf(Otvet + "%.4f", result);
-        } else {
-            System.out.println("Действие введено не верно!!!");
+        switch (z) {
+            case ("+") : result = x + y; System.out.printf(Otvet + "%.4f", result); break;
+            case ("-") : result = x - y; System.out.printf(Otvet + "%.4f", result); break;
+            case ("*") : result = x * y; System.out.printf(Otvet + "%.4f", result); break;
+            case ("/") : result = x / y; System.out.printf(Otvet + "%.4f", result); break;
+            default: System.out.println("Действие введено не верно!!!"); break;
         }
     }
 }
+
+
