@@ -39,10 +39,10 @@ public class task3part1 {
         }
         System.out.println(minPositive);
 
-        System.out.print("Максимально отрицательный элемент массива : ");
-        int minNegative = -1;
+        System.out.print("Максимальный отрицательный элемент массива : ");
+        int minNegative = -10;
         for (int i = 0; i < array.length; i++) {
-            if ((array[i] <= minNegative) & (array[i] < 0)) {
+            if ((array[i] >= minNegative) & (array[i] < 0)) {
                 minNegative = array[i];
             }
         }
@@ -56,7 +56,7 @@ public class task3part1 {
                 array[i] = minPositive;
             }
         }
-        System.out.println("\nМассив с измененными максимально отрицательными и минимально положительными элементами: ");
+        System.out.println("\nМассив с измененными максимальными отрицательными и минимально положительными элементами: ");
         for (int value : array) {
             System.out.print(value + " ");
         }

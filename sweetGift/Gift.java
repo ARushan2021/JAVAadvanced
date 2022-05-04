@@ -4,13 +4,11 @@ public abstract class Gift {
     private String name;
     private int price;
     private int weight;
-    private String uniqueParameter;
 
-    public Gift(String name, int price, int weight, String uniqueParameter) {
+    public Gift(String name, int price, int weight) {
         this.name = name;
         this.price = price;
         this.weight = weight;
-        this.uniqueParameter = uniqueParameter;
     }
 
     public String getName() {
@@ -37,17 +35,10 @@ public abstract class Gift {
         this.weight = weight;
     }
 
-    public String getUniqueParameter() {
-        return uniqueParameter;
-    }
-
-    public void setUniqueParameter(String uniqueParameter) {
-        this.uniqueParameter = uniqueParameter;
-    }
-
     @Override
     public String toString() {
-        return "Name = " + name + ", Price = " + price + ", Weight = " + weight + ", Unique parameter = " + uniqueParameter;
+        return "Name = " + name + ", Price = " + price + ", Weight = " + weight;
     }
+
 }
 
