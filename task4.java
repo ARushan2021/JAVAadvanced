@@ -1,7 +1,7 @@
 import OOPCalculator.*;
 
 /**
- * Task 2 from JAVA advanced
+ * Task 4 from JAVA advanced
  * @author Abdurahmanov Rushan
  */
 
