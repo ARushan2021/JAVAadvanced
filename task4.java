@@ -2,7 +2,7 @@ import OOPCalculator.*;
 
 /**
  * Task 4 from JAVA advanced
- * @author Abdurahmanov Rushan
+ * @author Abdurahmanov Rushan.
  */
 
 public class task4 {
