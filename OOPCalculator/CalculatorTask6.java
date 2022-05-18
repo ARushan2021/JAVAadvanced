@@ -7,15 +7,15 @@ public class CalculatorTask6 {
     double argumentTwo;
     String operation;
 
-    public CalculatorTask6( double argumentOne, double argumentTwo, String operation){
+    public CalculatorTask6(double argumentOne, double argumentTwo, String operation) {
         this.argumentOne = argumentOne;
         this.argumentTwo = argumentTwo;
         this.operation = operation;
     }
 
-    public void Result () {
+    public double Result() {
 
-        try{
+        try {
 
             switch (operation) {
                 case ("+"):
@@ -37,7 +37,11 @@ public class CalculatorTask6 {
                     break;
             }
             System.out.printf("Ответ : " + argumentOne + " " + operation + " " + argumentTwo + " = " + "%.4f", results);
+        } catch (ArithmeticException e) {
+            System.out.println("На ноль делить нельзя : " + e);
         }
-        catch(ArithmeticException e){System.out.println("На ноль делить нельзя : " + e);}
+        return results;
     }
 }
+
+
