@@ -7,6 +7,7 @@ public class CalculatorTask6 {
     double argumentTwo;
     String operation;
 
+
     public CalculatorTask6(double argumentOne, double argumentTwo, String operation) {
         this.argumentOne = argumentOne;
         this.argumentTwo = argumentTwo;
@@ -14,9 +15,7 @@ public class CalculatorTask6 {
     }
 
     public double Result() {
-
         try {
-
             switch (operation) {
                 case ("+"):
                     results = argumentOne + argumentTwo;
@@ -40,8 +39,7 @@ public class CalculatorTask6 {
         } catch (ArithmeticException e) {
             System.out.println("На ноль делить нельзя : " + e);
         }
-        return results;
+       return results;
     }
 }
-
 
